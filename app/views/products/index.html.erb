@@ -1,6 +1,8 @@
 <h1>All Products</h1>
 <ul>
    <% @products.each do |p| %>
-     <li><%= link_to p.title, p %></li>
+     <li><%= link_to p.title, p %>
+     <p>Category: <%= p.category.name %>  </p>
+     </li>
    <% end %>>
 </ul>
